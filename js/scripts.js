@@ -1,35 +1,48 @@
+// Global Variable
+var toppingArray = [];
+
 // Business Logic -->
-function Pizza(size, topping) {
+function Pizza(size) {
   this.size = size;
-  // this.topping = new Topping();
+  this.topping = toppingArray.length;
 }
 
-// function Topping(name) {
-//   this.name = name;
-//   this.price = 1;
-// }
 
+Pizza.prototype.price = function() {
+  if (this.size === "Small") {
+    return 5 + this.topping;
+  }
 
+  if (this.size === "Medium") {
+    return 10 + this.topping;
+  }
 
+  if (this.size === "Large") {
+    return 15 + this.topping;
+  }
+}
 
 
 // UI Logic -->
-$(function(){
-  $("#select-options").submit(function(event){
+$(function() {
+  $("form#select-options").submit(function(event) {
     event.preventDefault();
 
-    var size = $("input:radio[name=size]:checked").val();
+    $("#output").show();
 
-    var newPizza = new Pizza(size)
+    var inputtedSize = $("input:radio[name=size]:checked").val();
 
-    $("#output").append(size + "<br>");
+    $(".size-pizza").append(inputtedSize + "<br>");
 
-    $("input:checkbox[name=topping]:checked").each(function(){
-      var topping = $(this).val();
-      $("#output").append(topping + "<br>");
+    $("input:checkbox[name=topping]:checked").each(function() {
+      toppingName = $(this).val();
+      toppingArray.push(toppingName)
+      $(".toppings").append(toppingName + "<br>");
 
-    })
+    });
 
+    var newPizza = new Pizza(inputtedSize, toppingName);
+    $(".price").append(newPizza.price());
+  });
 
-  })
-})
+});
