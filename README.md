@@ -1,6 +1,6 @@
 # _Order Pizza_
 
-#### [Click here to view GitHub Page](https://sonofakel.github.io/order-pizza/)
+#### <a href="https://sonofakel.github.io/order-pizza/" target="_blank">Click here to view GitHub Page</a>
 
 #### _Website for a pizza company, July 21st, 2017_
 
