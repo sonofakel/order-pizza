@@ -23,6 +23,10 @@ Pizza.prototype.price = function() {
 }
 
 
+
+
+
+
 // UI Logic -->
 $(function() {
 
@@ -34,17 +38,20 @@ $(function() {
 
     var inputtedSize = $("input:radio[name=size]:checked").val();
 
-    $(".size-pizza").append(inputtedSize + "<br>");
+    $(".size-pizza").text(inputtedSize);
 
     $("input:checkbox[name=topping]:checked").each(function() {
       toppingName = $(this).val();
       toppingArray.push(toppingName)
-      $(".toppings").append(toppingName + "<br>");
+      var uniqueArray = toppingArray.filter(function(item, pos) {
+          return toppingArray.indexOf(item) == pos;
+      })
+      $(".toppings").text(uniqueArray);
 
     });
 
     var newPizza = new Pizza(inputtedSize, toppingName);
-    $(".price").append(newPizza.price());
+    $(".price").text(newPizza.price());
   });
 
 

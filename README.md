@@ -12,6 +12,7 @@
 | User chooses 1 or more topping and the are displayed under pizza size  |  Cheese, Peppers, Artichoke |  Cheese, Peppers, Artichoke | Done |
 | Display price for small , medium and large pizza  |  small, medium, large | 5, 10, 15  | Done |
 | Calculate price of pizza and toppings  |  small, medium, large and 3 of toppings | 5 + 3, 10 + 3, 15 + 3  | Done |
+| When toppings are changed after submit only add new toppings|  new toppings added | new results | Done |
 
 Notes:
 
