@@ -1,6 +1,13 @@
+.container {
+  margin-bottom: 2%;
+  background-image: url("../img/bkg.png");
+  padding-bottom: 10%;
+}
+
 .jumbotron {
   text-align: center;
-
+  background-image: url("../img/jum-bkg.png");
+  color: #CB3333;
 }
 
 #output {
