@@ -31,6 +31,7 @@ $(function() {
     event.preventDefault();
 
     $("#output").show();
+    $("#show").show();
 
     var inputtedSize = $("input:radio[name=size]:checked").val();
 
@@ -40,9 +41,9 @@ $(function() {
       toppingName = $(this).val();
       toppingArray.push(toppingName)
       uniqueArray = toppingArray.filter(function(item, pos) {
-          return toppingArray.indexOf(item) == pos;
+        return toppingArray.indexOf(item) == pos;
       })
-        var uniqueString = uniqueArray.join(", ")
+      var uniqueString = uniqueArray.join(", ")
       $(".toppings").text(uniqueString);
 
     });
