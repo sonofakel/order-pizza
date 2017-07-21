@@ -1,5 +1,7 @@
 # _Order Pizza_
 
+#### [Click here to view GitHub Page](https://sonofakel.github.io/order-pizza/)
+
 #### _Website for a pizza company, July 21st, 2017_
 
 #### By _**Charlie Kelson**_
