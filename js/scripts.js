@@ -1,24 +1,25 @@
 // Global Variable
 var toppingArray = [];
+var uniqueArray;
 
 // Business Logic -->
 function Pizza(size) {
   this.size = size;
-  this.topping = toppingArray.length;
+  this.topping = uniqueArray.length;
 }
 
 
 Pizza.prototype.price = function() {
   if (this.size === "Small") {
-    return 5 + this.topping;
+    return 5 + uniqueArray.length;
   }
 
   if (this.size === "Medium") {
-    return 10 + this.topping;
+    return 10 + uniqueArray.length;
   }
 
   if (this.size === "Large") {
-    return 15 + this.topping;
+    return 15 + uniqueArray.length;
   }
 }
 
@@ -43,7 +44,7 @@ $(function() {
     $("input:checkbox[name=topping]:checked").each(function() {
       toppingName = $(this).val();
       toppingArray.push(toppingName)
-      var uniqueArray = toppingArray.filter(function(item, pos) {
+      uniqueArray = toppingArray.filter(function(item, pos) {
           return toppingArray.indexOf(item) == pos;
       })
       $(".toppings").text(uniqueArray);
