@@ -8,7 +8,7 @@
 
 | Behavior  |  Input  | Output  |
 |---|---|---|
-|   |   |   |
+| User  chooses size and submits order |  small, medium, large  |  You've ordered a: Large pizza.  |
 |   |   |   |
 |   |   |   |
 
@@ -17,10 +17,10 @@ Notes:
 - Pizza object will take data from the following places.
   - size ["small", "medium", "large"]; (radio button)
   - this.cheese : cheese; (checkbox)
-  - this.pepperoni : pepperoni;
+  - this.peppers : peppers;
   - this.artichoke : artichoke;
-  - this.anchovy: anchovy;
 - Prototype method for the cost of the pizza
+
 
 
 ## Description
