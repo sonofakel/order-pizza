@@ -25,7 +25,9 @@ Pizza.prototype.price = function() {
 
 // UI Logic -->
 $(function() {
-  $("form#select-options").submit(function(event) {
+
+  $("#select-options").submit(function(event) {
+
     event.preventDefault();
 
     $("#output").show();
@@ -44,5 +46,6 @@ $(function() {
     var newPizza = new Pizza(inputtedSize, toppingName);
     $(".price").append(newPizza.price());
   });
+
 
 });
