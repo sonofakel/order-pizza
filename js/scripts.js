@@ -8,7 +8,6 @@ function Pizza(size) {
   this.topping = uniqueArray.length;
 }
 
-
 Pizza.prototype.price = function() {
   if (this.size === "Small") {
     return 5 + uniqueArray.length;
@@ -22,10 +21,6 @@ Pizza.prototype.price = function() {
     return 15 + uniqueArray.length;
   }
 }
-
-
-
-
 
 
 // UI Logic -->
@@ -47,13 +42,13 @@ $(function() {
       uniqueArray = toppingArray.filter(function(item, pos) {
           return toppingArray.indexOf(item) == pos;
       })
-      $(".toppings").text(uniqueArray);
+        var uniqueString = uniqueArray.join(", ")
+      $(".toppings").text(uniqueString);
 
     });
 
     var newPizza = new Pizza(inputtedSize, toppingName);
     $(".price").text(newPizza.price());
   });
-
 
 });
