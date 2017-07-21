@@ -13,25 +13,35 @@
       <div class="jumbotron">
         <h1>Order Pizza<h1>
       </div>
-      <h3>Please a size and toppings for your pizza:</h3>
-      <div class="radio">
-      <label>
-        <input type="radio" name="topping" value="chocolate" checked>
-        Chocolate
-      </label>
+      <div class="row">
+        <div class="col-md-6">
+        <h3>Please select a size and toppings for your pizza:</h3>
+
+        <div class="radio">
+        <label>
+          <input type="radio" name="size" value="small" checked>
+          Small
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+          <input type="radio" name="size" value="medium">
+          Medium
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+          <input type="radio" name="size" value="large">
+          Large
+        </label>
+        </div>
       </div>
-      <div class="radio">
-      <label>
-        <input type="radio" name="topping" value="vanilla">
-        Vanilla
-      </label>
+      <div class="col-md-6">
+        <div id="output">
+
+        </div>
       </div>
-      <div class="radio">
-      <label>
-        <input type="radio" name="topping" value="cookiesandcream">
-        Cookies & Cream
-      </label>
-      </div>
+    </div>
     </div>
 
   </body>
