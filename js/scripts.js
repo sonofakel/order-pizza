@@ -22,7 +22,13 @@ $(function(){
 
     var newPizza = new Pizza(size)
 
-    $("#output").text(size);
+    $("#output").append(size + "<br>");
+
+    $("input:checkbox[name=topping]:checked").each(function(){
+      var topping = $(this).val();
+      $("#output").append(topping + "<br>");
+
+    })
 
 
   })

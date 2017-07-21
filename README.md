@@ -6,11 +6,11 @@
 
 ## Specifications
 
-| Behavior  |  Input  | Output  |
-|---|---|---|
-| User  chooses size and submits order |  small, medium, large  |  You've ordered a: Large pizza.  |
-|   |   |   |
-|   |   |   |
+| Behavior  |  Input  | Output  | |
+|---|---|---|---|
+| User  chooses size and submits order |  small, medium, large  |  small, medium, large  | Done|
+| User chooses 1 or more topping and the are displayed under pizza size  |  Cheese, Peppers, Artichoke |  Cheese, Peppers, Artichoke | Done |
+|   |   |   |  |
 
 Notes:
 
