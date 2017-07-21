@@ -8,16 +8,17 @@
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <title>Order Pizza</title>
+  <title>Cheap Ease Pizzeria</title>
 </head>
 
 <body>
   <div id="page">
-    <div class="container">
+    <div class="container cont-header">
       <div class="jumbotron">
-        <h1>Big Papa's Pizzeria<h1>
+        <h1>Cheap Ease Pizzeria<h1>
       </div>
-
+    </div>
+    <div class="container">
       <div class="row">
         <div class="col-md-12 header">
         <h2>What size pizza would you like:</h2>
@@ -30,20 +31,20 @@
         <form id="select-options">
           <div class="radio">
           <label>
-            <input type="radio" name="size" value="Small" checked>
-            Small ($5)
-          </label>
-          </div>
-          <div class="radio">
-          <label>
-            <input type="radio" name="size" value="Medium">
-            Medium ($10)
+            <input type="radio" name="size" value="Medium" checked>
+            Medium ($5)
           </label>
           </div>
           <div class="radio">
           <label>
             <input type="radio" name="size" value="Large">
-            Large ($15)
+            Large ($10)
+          </label>
+          </div>
+          <div class="radio">
+          <label>
+            <input type="radio" name="size" value="X-Large">
+            X-Large ($15)
           </label>
           </div>
         </div>
@@ -66,7 +67,7 @@
     <div class="col-md-2">
     </div>
     <div class="col-md-2 toppings-col">
-      <h5>Each topping is $1 extra</h5>
+      <h5>*Each topping is $1 extra</h5>
         <div class="form-group">
            <input type="checkbox" name="topping" value="Cheese">Cheese<br>
            <input type="checkbox" name="topping" value="Peppers">Peppers<br>
@@ -88,8 +89,8 @@
       <button type="submit" class="btn btn-success">Order</button>
       </form>
     </div>
-    <div class="col-md-4">
-      <img src="img/pizza-top.jpg">
+    <div class="col-md-4 top-image">
+      <img src="img/pizza-top.jpg" class="top-image">
     </div>
     <div class="col-md-2">
     </div>

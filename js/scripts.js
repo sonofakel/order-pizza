@@ -9,15 +9,15 @@ function Pizza(size) {
 }
 
 Pizza.prototype.price = function() {
-  if (this.size === "Small") {
+  if (this.size === "Medium") {
     return 5 + uniqueArray.length;
   }
 
-  if (this.size === "Medium") {
+  if (this.size === "Large") {
     return 10 + uniqueArray.length;
   }
 
-  if (this.size === "Large") {
+  if (this.size === "X-Large") {
     return 15 + uniqueArray.length;
   }
 }

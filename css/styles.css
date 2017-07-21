@@ -1,13 +1,24 @@
 #page {
   font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 10%;
+  background-image: url("../img/dark-bkg.png");
+
 }
 
 
 .container {
   background-image: url("../img/bkg.png");
-
+  margin-bottom: 3%;
+  border-radius: 25px;
 }
 
+.cont-header {
+  background-image: none;
+}
+
+img {
+  padding: 2%;
+}
 
 
 .jumbotron {
@@ -30,6 +41,7 @@
 
 .size-image {
   float:left;
+
 }
 
 .select-size {
@@ -42,4 +54,13 @@
 
 .top-col-2 {
   padding-top:.5em;
+}
+
+.btn-success {
+  font-size: 26px;
+}
+
+.top-image {
+  padding-bottom: 3%;
+  border-radius: 15px;
 }
